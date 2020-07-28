@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dataTable $</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="table.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- jquerty 3 links  -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- heading -->
+  <h1 id="headtag">Data Table</h1>
+  <!-- container -->
+  <div class="container">
+    <!-- header -->
+    <div class="header">
+      <!-- selecter -->
+      <div class="select">
+        <p id="ps1">show</p>
+        <select name="cars" id="cars">
+          <option value="10">10</option>
+          <option value="5">5</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+        <p id="ps2">entries</p>
+      </div>
+      <!-- search -->
+      <div class="searcher">
+        search :
+        <input type='text' id='txt_searchall' placeholder='Enter search text'>
+      </div>
+    </div>
+
+
+
+    <!-- the input fields that will hold the variables we will use -->
+    <input type='hidden' id='current_page' />
+    <input type='hidden' id='show_per_page' />
+
+    <!-- table -->
+
+    <table id="dataTable">
+      <thead>
+        <!-- <th>Name</th> -->
+        <th>
+          <p class="sort-by">Name</p>
+        </th>
+        <th>
+          <p class="sort-by">Position</p>
+        </th>
+        <th>
+          <p class="sort-by">Office</p>
+        </th>
+        <th>
+          <p class="sort-by">Extn</p>
+        </th>
+        <th>
+          <p class="sort-by">Start date</p>
+        </th>
+        <th>
+          <p class="sort-by">Salary</p>
+        </th>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div id="current_v"></div>
+    <!-- An empty div which will be populated using jQuery for pagination-->
+    <div id='page_navigation'></div>
+  </div>
+
+  <script src="table.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+ 
+  #page_navigation a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+
+  #page_navigation a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  #page_navigation a:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+  
+  .notfound {
+    display: none;
+  }
+
+  
+
+  #page_navigation {
+    float: left;
+    padding: 10px;
+
+  }
+
+  #current_v {
+    float: left;
+    padding: 17px;
+    padding-right: 150px;
+  }
+
+  
+  th p.sort-by {
+    padding-right: 18px;
+    position: relative;
+    
+
+  }
+
+  p.sort-by:before,
+  p.sort-by:after {
+    border: 4px solid transparent;
+    content: "";
+    
+    height: 0;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+    width: 0;
+  }
+
+  p.sort-by:before {
+    border-bottom-color: #666;
+    margin-top: -9px;
+  }
+
+  p.sort-by:after {
+    border-top-color: #666;
+    margin-top: 1px;
+  }
+
+  #ps1 {
+    float: left;
+    padding-right: 10px;
+  }
+
+  #ps2 {
+    float: left;
+    padding-left: 10px;
+  }
+
+  #cars {
+    float: left;
+
+  }
+
+  .searcher {
+    float: left;
+    position: relative;
+    left: 680px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  #headtag {
+    text-align: center;
+    margin: 5px;
+  }
